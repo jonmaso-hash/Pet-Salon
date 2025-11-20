@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="myStyle.css">
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <title>Registration</title>
+</head>
+<body class>
+  
+    <header class="header-index2">
+        <div class="navigation-bar">
+            <h1>Pet Registration</h1>
+            <nav>
+              <a href="index.html"> Home </a>
+                <a href="#"> About </a>
+                <a href="registration.html"> Registration </a>
+                <a href="services.html"> Services </a>
+            </nav>
+        </div>
+    </header>
+
+ <form class="container border bg-light m-5 p-4">
+        <div class="mb-3">
+            <label class="form-label">Name</label>
+            <input class="form-control" type="text" name="Name">
+        </div>
+
+        <div class="mb-3">
+            <label class="form-label">Age</label>
+            <input class="form-control" type="number" name="Age">
+        </div>
+
+        <div class="mb-3">
+            <label class="form-label">Breed</label>
+            <select class="form-select" name="breedCategory">
+                <option value="Dog-Breed"></option>
+                <option value="Dog-Breed">Select Breed</option>
+                <option value="Dog-Breed">Boxer</option>
+                <option value="Dog-Breed">PitBull</option>
+                <option value="Dog-Breed">German Sherpard</option>
+                <option value="Dog-Breed">Yorkie</option>
+                <option value="Dog-Breed">Mixed</option>
+            </select>
+        </div>
+
+         <div class="mb-3">
+            <label class="form-label">Gender</label>
+            <select class="form-select" name="genderCategory">
+                <option value="Select-Gender"></option>
+                <option value="gender">Select Gender</option>
+                <option value="gender">Male</option>
+                <option value="gender">Female</option>
+            </select>
+        </div>
+
+           <div class="mb-3">
+            <label class="form-label">Service</label>
+            <select class="form-select" name="serviceCategory">
+                <option value="Select-Gender"></option>
+                <option value="service">Select Service </option>
+                <option value="service">Nail clipping </option>
+                <option value="service">Hair Treatment </option>
+                <option value="service">Pet Massage </option>
+                <option value="service">Vaccinations </option>
+                <option value="service">Microchipping </option>
+            </select>
+        </div>
+
+        <div class="d-flex justify-content-end">
+            <button class="btn btn-primary" type="submit" onclick="onSubmitProduct(event)">Register</button>
+        </div>
+
+        </form>
+        
+        <div id="productList" class="border bg-light">
+
+        </div>
+
+<script src="./registration.js"></script>
+</body>
+     
+
+ <footer class = "footer-index">
+           <div class = "footer-nav">
+            <h1 class="h1-footer"> Fur-legged Friends Pet Salon </h1>
+            <nav> 
+                <a href="#"> About </a>
+                <a href="services.html"> Services </a>
+                <a href="registration.html"> Registration </a>
+            </nav>
+           </div>
+        </footer>
+</html>

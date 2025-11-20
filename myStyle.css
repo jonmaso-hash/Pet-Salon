@@ -14,6 +14,9 @@
   justify-content: center;
   overflow: hidden;
 }
+body{
+  background-color: lightsteelblue;
+}
 
 .header-index{
     background:black;
@@ -23,6 +26,27 @@
     text-align: center;
 }
 
+.header-index2{
+     background-image: url(./Images/pele4.jpg);
+    background-size: cover;
+    height: 1500px;
+    width: 1920px;
+    color:white;
+    text-align: center;
+    background-color: white;
+    
+}
+
+.footer-index{
+    background-color: black;
+    height: 100px;
+    color:black;
+    text-align: center;
+}
+
+.h1-footer{
+  color: white;
+}
 
 
 
